@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body {
+    background: linear-gradient(
+        135deg,
+        rgba(25, 28, 223, 0.6),
+        rgba(87, 173, 236, 0.6)
+    );
+}
+
+/* MAIN PROFILE CONTAINER */
+.profile-container {
+    width: 520px;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 60px auto;
+    padding: 25px 30px;
+    border-radius: 10px;
+    border: 2px solid #3b82c4;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.25);
+}
+
+/* HEADER */
+.profile-header {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #3b82c4;
+    padding-bottom: 12px;
+}
+
+.profile-header h2 {
+    color: #1f3c88;
+    font-weight: bold;
+}
+
+/* AVATAR */
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* PROFILE ROW */
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+/* LABEL */
+.profile-row label {
+    font-weight: bold;
+    color: #1f2933;
+}
+
+/* VALUE */
+.profile-row span {
+    color: #374151;
+}
+
+/* BUTTON AREA */
+.profile-buttons {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* EDIT BUTTON */
+.edit-btn {
+    background-color: #16a34a;
+    color: white;
+    border: 2px solid #15803d;
+    padding: 10px 26px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    background-color: #dc2626;
+    color: white;
+    border: 2px solid #b91c1c;
+    padding: 10px 26px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+/* HOVER EFFECTS */
+.edit-btn:hover {
+    background-color: #15803d;
+}
+
+.close-btn:hover {
+    background-color: #b91c1c;
+}
+.btn{
+	color: white;
+	text-decoration: none;
+}

@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bill Payment</title>
+
+    <!-- Use ONE CSS method only -->
+    <link rel="stylesheet" href="/static/css/member_bill_payment.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Member Navbar</title> <link rel="stylesheet" href="/static/css/member_navbar.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/index/">Society<span>Pro</span></a> </div> <ul class="nav-links"> <li><a href="/member_dashboard/">Home</a></li> <li><a href="/member_profile/">Member Profile Edit</a></li> <li><a href="/member_bill_payment/">Pending Bills</a></li> <li><a href="/member_payment/">Payment</a></li> <li><a href="/member_complaint_form/">Complaint</a></li> <li><a href="/member_view_notice/">Society Notices</a></li> <li><a href="/member_view_staff/">Staff</a></li> <li><a href="/member_feedback/">Member Feedback</a></li> <div class="profile"> <a href="/member_profile1/"><i class="fas fa-user"></i></a> </div> <li><a href="/index/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+<body>
+
+    <h1>Pending Bills</h1>
+      <table class="table1">
+         <thead>
+             <th>Month</th>
+             <th>Year</th>
+             <th>flat_no</th>
+             <th>Wing</th>
+             <th>Amount</th>
+             <th>Status</th>
+             <th>Action</th>
+         </thead>
+         <tbody>
+         
+         
+         
+        
+        <form name="member_bill_payment" action="/action/member_bill_payment/" method="post">
+        {% csrf_token %}
+	      <tr>
+	          <td></td>
+	          <td></td>
+	          <td></td>
+	          <td></td>
+	          <td></td>
+	          <td></td>
+	          
+	          <input type="hidden" name="flatNo" value="">
+	          <input type="hidden" name="wing" value="">
+	          <input type="hidden" name="month" value="">
+	          <input type="hidden" name="amount" value="">
+	          <input type="hidden" name="year" value=""> 
+	          <input type="hidden" name="id" value="">
+	          
+	          <td><button type="submit" name="submit" class="ab" value="payment">Pay Now</button></td>
+	      </tr>
+	      </form>
+       
+          </tbody>
+         </table>
+     <br><br>
+     <h1>Payed Bills</h1>
+     <table class="table1">
+         <thead>
+         
+             <th>Month</th>
+             <th>Year</th>
+             <th>flat_no</th>
+             <th>Wing</th>
+             <th>Amount</th>
+             <th>Card/UPI ID Name</th>
+             <th>Card/UPI ID</th>
+             <th>Status</th>
+             
+         </thead>
+         <tbody>
+        
+        
+	      <tr>
+	          <<td></td>
+	          <td></td>
+	          <td></td>
+	          <td></td>
+	          <td></td>
+	           <td></td>
+	          <td></td>
+	          <td></td>
+	          
+	      </tr>
+       
+      </tbody>
+  </table>
+                
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Registration</title>
+    <link rel="stylesheet" href="/static/css/member_register.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Navbar</title> <link rel="stylesheet" href="/static/css/member_navbar.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/index/">Society<span>Pro</span></a> </div> <ul class="nav-links"> <li><a href="/index/">Home</a></li> <li><a href="/index/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+
+
+<body>
+
+<div class="register-box">
+    <h2>MEMBER REGISTRATION FORM</h2>
+
+    <form id="member_profile" name="member_register" action="/action/member_register/" method="post">
+        {% csrf_token %}
+
+        <label>Member Name</label>
+        <input type="text" name="membername" placeholder="Enter member name" required name="membername">
+
+        <div class="row">
+            <div>
+                <label>Flat No</label>
+                <input type="text" name="flatno" placeholder="Enter flat no" required name="flatno">
+            </div>
+            <br>
+            <div>
+                <label>Wing</label>
+                <input type="text" name="wing" placeholder="Enter wing" required name="wing">
+            </div>
+        </div>
+
+        <label>Contact No</label>
+        <input type="text" name="contact" placeholder="Enter contact no" required>
+
+        <label>Email ID</label>
+        <input type="email" name="email" placeholder="Enter email" required>
+
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Enter username" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter password" required>
+
+         <label>Confirm Password</label>
+        <input type="password" name="cpassword" placeholder="Enter Confirm Password" required>
+
+
+
+        <div class="buttons">
+            <button name="submit" value="Submit" type="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
+    

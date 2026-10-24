@@ -1,0 +1,91 @@
+/* Background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1f3c88, #2f5da9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.payment-container {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    margin-top: 80px; /* space for navbar */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f3c88;
+}
+
+.bill-details {
+    background: #f4f6f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.amount {
+    font-size: 18px;
+    color: #1f3c88;
+    font-weight: bold;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #1f3c88;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.payment-method {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Button */
+.pay-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pay-btn:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Entry / Exit Form</title>
+    <link rel="stylesheet" href="/static/css/security_visitor_entery_exit.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Navbar</title> <link rel="stylesheet" href="/static/css/security_navbar.css"> <style></style> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/index/">Society<span>Pro</span> </a> </div> <ul class="nav-links"> <li><a href="/security_dashboard/">Home</a></li> <li><a href="/security_visitor_entery_exit/">Visitor</a></li> <li><a href="/security_todays_visitors/">Today's Visitors</a></li> <li><a href="/index/">Logout</a></li> <li><a href="/security_login/"></a></li> </ul> </nav> </body> </html> 
+
+<body>
+
+<div class="form-box">
+    <h2>VISITOR ENTRY / EXIT FORM</h2>
+
+    <form id="member" name="security_visitor_entery_exit" action="/action/security_visitor_entery_exit/" method="post">
+        {% csrf_token %}
+        <label>Visitor Name :</label>
+        <input type="text" placeholder="Enter Visitor Name" name="visitor">
+        <label>Mobile No :</label>
+        <input type="text" placeholder="Enter Mobile No" name="mobile">
+
+        <label>Vehicle No :</label>
+        <input type="text" placeholder="Enter Vehicle Number" name="vehicle">
+        
+        <label>Date :</label>
+        <input type="date" placeholder="Enter date" name="date">
+
+        <div class="row">
+            <div>
+                <label>Entry Time :</label>
+                <input type="time" name="time">
+            </div>
+            <br><br>
+            <div>
+                <label>Exit Time :</label>
+                <input type="time" name="atime">
+            </div>
+        </div>
+        
+         <div class="row">
+            <div>
+                <label>Wing :</label>
+                <input type="text" name="wing">
+            </div>
+            <br><br>
+            <div>
+                <label>Flat No :</label>
+                <input type="text" name="flat">
+            </div>
+        </div>
+
+        <label>Purpose :</label>
+        <input type="text" placeholder="Purpose of Visit" name="visit">
+
+        <div class="buttons">
+            <button type="submit"value="security_visitor_entery_exit" name="submit">SUBMIT</button>
+            <button type="reset"value="security_visitor_entery_exit" name="submit">RESET</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+    

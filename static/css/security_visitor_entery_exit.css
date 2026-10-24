@@ -1,0 +1,104 @@
+/* BACKGROUND */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(25,28,223,0.6), rgba(87,173,236,0.6));
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN FORM BOX */
+.form-box {
+    width: 420px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 60px auto;
+    padding: 22px;
+    border-radius: 8px;
+    border: 2px solid #3b82c4; /* blue border */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+/* HEADING */
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f3c88;
+    border-bottom: 2px solid #3b82c4;
+    padding-bottom: 10px;
+}
+
+/* LABELS */
+.form-box label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #1f2933;
+}
+
+/* INPUT FIELDS */
+.form-box input[type="text"],
+.form-box input[type="time"],
+.form-box input[type="date"]  {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 1.5px solid #94b8e0;
+    outline: none;
+}
+
+/* INPUT FOCUS */
+.form-box input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.5);
+}
+
+/* ROW FOR ENTRY / EXIT TIME */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.row div {
+    width: 48%;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 22px;
+    text-align: center;
+}
+
+/* SUBMIT BUTTON */
+.buttons button[type="submit"] {
+    background-color: #16a34a; /* modern green */
+    color: white;
+    border: 2px solid #15803d;
+    padding: 9px 22px;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* RESET BUTTON */
+.buttons button[type="reset"] {
+    background-color: #dc2626; /* modern red */
+    color: white;
+    border: 2px solid #b91c1c;
+    padding: 9px 22px;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* HOVER EFFECTS */
+.buttons button[type="submit"]:hover {
+    background-color: #15803d;
+}
+
+.buttons button[type="reset"]:hover {
+    background-color: #b91c1c;
+}

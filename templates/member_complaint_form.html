@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="/static/css/member_complaint_form.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Member Navbar</title> <link rel="stylesheet" href="/static/css/member_navbar.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/index/">Society<span>Pro</span></a> </div> <ul class="nav-links"> <li><a href="/member_dashboard/">Home</a></li> <li><a href="/member_profile/">Member Profile Edit</a></li> <li><a href="/member_bill_payment/">Pending Bills</a></li> <li><a href="/member_payment/">Payment</a></li> <li><a href="/member_complaint_form/">Complaint</a></li> <li><a href="/member_view_notice/">Society Notices</a></li> <li><a href="/member_view_staff/">Staff</a></li> <li><a href="/member_feedback/">Member Feedback</a></li> <div class="profile"> <a href="/member_profile1/"><i class="fas fa-user"></i></a> </div> <li><a href="/index/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+<body>
+
+<div class="form-box">
+    <h2>COMPLAINT FORM</h2>
+
+    <form id="member" name="member_complaint_form" action="/action/member_complaint_form/" method="post">
+        {% csrf_token %}
+        <label>Complaint Category:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="category" value="Electric"> Electric</label>
+            <label><input type="radio" name="category" value="Water"> Water</label>
+            <label><input type="radio" name="category" value="Staff"> Staff</label>
+            <label><input type="radio" name="category" value="Other"> Other</label>
+        </div>
+
+        <label>Description:</label>
+        <textarea rows="3" placeholder="Enter complaint details" name="description"></textarea>
+		<label>Date:</label>
+       <input type="date" placeholder="Flat No" name="date">
+        <div class="row">
+            <div>
+                <label>Flat No:</label>
+                <input type="text" placeholder="Flat No" name="flatno">
+            </div>
+            <br><br>
+            <div>
+                <label>Wing:</label>
+                <input type="text" placeholder="Wing" name="wing">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" name="submit" value="complaint_form">SUBMIT</button>
+            <button type="reset">RESET</button>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <h2>My Complaint Status</h2>
+
+    <table>
+        <tr>
+            <th>Complaint ID</th>
+            <th>Category</th>
+            <th>Complaint</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+        
+		
+        <tr><td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class=""></td></tr>
+        
+    </table>
+</div>
+</body>
+</html>
+    

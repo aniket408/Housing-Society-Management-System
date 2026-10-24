@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #eef2f7, #dfe7f1);
+    height: 100vh;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logout-card {
+    background: #ffffff;
+    width: 420px;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 40px;
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+.logout-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.logout-card p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 48%;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #b52a37;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #565e64;
+}
+
+.footer-text {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #999;
+}

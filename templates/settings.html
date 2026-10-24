@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+     <link rel="stylesheet" href="/static/css/settings.css">
+    
+</head>
+<body>
+
+<div class="settings-box">
+    <h2>SETTINGS</h2>
+    <form id="admin" name="settings" action="/action/settings/" method="post">
+        {% csrf_token %}
+
+    <div class="section">
+        <h3>Update Profile</h3>
+
+        <label>Name</label>
+        <input type="text" placeholder="Enter name" name="entername">
+
+        <label>Contact</label>
+        <input type="text" placeholder="Enter contact number" name="number">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" name="email">
+    </div>
+
+    <div class="section">
+        <h3>Change Password</h3>
+
+        <label>Old Password</label>
+        <input type="password" placeholder="Old password" name="opassword">
+
+        <label>New Password</label>
+        <input type="password" placeholder="New password"name="npassword">
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm password"name="cpassword">
+    </div>
+
+    <div class="buttons">
+        <button class="update" value="settings" name="submit" >UPDATE</button>
+        <button class="cancel" value="settings" name="submit" >CANCEL</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="/static/css/admin_event_management.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Admin Navbar</title> <link rel="stylesheet" href="/static/css/admin_navbar.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/admin_dashboard/"> Society<span>Pro</span> </a> </div> <ul class="nav-links"> <li><a href="/admin_dashboard/">Home</a></li> <li><a href="/admin_add_staff/">Add Staff</a></li> <li><a href="/admin_staff_management/">Staff</a></li> <li><a href="/admin_maintenance_bill/">Maintenance</a></li> <li><a href="/admin_notice_board/">Notice</a></li> <li><a href="/admin_event_management/">Events</a></li> <li><a href="/member_payment_history/">Payment</a></li> <li><a href="/admin_view_complaint/">Complaint</a></li> <li><a href="/admin_view_feedback/">Feedback</a></li> <li><a href="/security_register/">Security</a></li> <li><a href="/admin_register/">Register</a></li> <li><a href="/admin_report/">Report</a></li> <li><a href="/logout/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+<body>
+
+<div class="event-box">
+    <h2>EVENT MANAGEMENT</h2>
+
+    <form id="admin" name="admin_event_management" action="/action/admin_event_management/" method="post">
+        {% csrf_token %}
+        <label>Event Title</label>
+        <input type="text" placeholder="Enter event name" name="eventname">
+
+        <label>Event Description</label>
+        <textarea placeholder="Enter event details" name="eventdetails"></textarea>
+
+        <div class="row">
+            <div>
+                <label>Event Date</label>
+                <input type="date" name="data">
+            </div>
+            <br><br>
+            <div>
+                <label>Event Time</label>
+                <input type="time" name="time">
+            </div>
+        </div>
+
+        <label>Venue</label>
+        <input type="text" placeholder="Society Hall / Ground" name="societyhall">
+
+        <label>Organized By</label>
+        <input type="text" placeholder="Committee / Admin" name="committee">
+
+        <div class="buttons">
+            <button type="submit" class="submit" value="admin_event_management" name="submit">ADD EVENT</button>
+            <button type="reset" class="reset">RESET</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+    

@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment History</title>
+    <link rel="stylesheet" href="/static/css/member_payment_history.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Admin Navbar</title> <link rel="stylesheet" href="/static/css/admin_navbar.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/admin_dashboard/"> Society<span>Pro</span> </a> </div> <ul class="nav-links"> <li><a href="/admin_dashboard/">Home</a></li> <li><a href="/admin_add_staff/">Add Staff</a></li> <li><a href="/admin_staff_management/">Staff</a></li> <li><a href="/admin_maintenance_bill/">Maintenance</a></li> <li><a href="/admin_notice_board/">Notice</a></li> <li><a href="/admin_event_management/">Events</a></li> <li><a href="/member_payment_history/">Payment</a></li> <li><a href="/admin_view_complaint/">Complaint</a></li> <li><a href="/admin_view_feedback/">Feedback</a></li> <li><a href="/security_register/">Security</a></li> <li><a href="/admin_register/">Register</a></li> <li><a href="/admin_report/">Report</a></li> <li><a href="/logout/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+<body>
+
+<div class="history-box">
+    <h2>PAYMENT HISTORY</h2>   
+     <table class="table1">
+         <thead>
+             <th>Month</th>
+             <th>Year</th>
+             <th>flat_no</th>
+             <th>Wing</th>
+             <th>Amount</th>
+             <th>Status</th>
+             <th>Card/UPI ID Name</th>
+             <th>Card/UPI ID</th>  
+         </thead>
+         <tbody>
+         
+         
+         
+        
+        <form name="member_payment_history" action="/action/member_payment_history/" method="post">
+        {% csrf_token %}
+	      <tr>
+	          <td></td>
+	          <td></td>
+	          <td></td>
+	          <td></td>
+	          <td></td>
+	          <td></td>
+	          
+	         <td></td>
+	          <td></td>
+	      </tr>
+	      </form>
+       
+          </tbody>
+         </table>
+
+    <div class="back-btn">
+        <button type="button" onclick="history.back()">BACK</button>
+    </div>
+</div>
+
+</body>
+</html>

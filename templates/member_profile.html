@@ -1,0 +1,66 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Profile</title>
+
+    <!-- CSS Link -->
+     <link rel="stylesheet" href="/static/css/member_profile.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Member Navbar</title> <link rel="stylesheet" href="/static/css/member_navbar.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/index/">Society<span>Pro</span></a> </div> <ul class="nav-links"> <li><a href="/member_dashboard/">Home</a></li> <li><a href="/member_profile/">Member Profile Edit</a></li> <li><a href="/member_bill_payment/">Pending Bills</a></li> <li><a href="/member_payment/">Payment</a></li> <li><a href="/member_complaint_form/">Complaint</a></li> <li><a href="/member_view_notice/">Society Notices</a></li> <li><a href="/member_view_staff/">Staff</a></li> <li><a href="/member_feedback/">Member Feedback</a></li> <div class="profile"> <a href="/member_profile1/"><i class="fas fa-user"></i></a> </div> <li><a href="/index/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+<body>
+		
+<form name="member_profile"action="/action/member_profile/" method="post"  id="member_profile" >
+        {% csrf_token %}
+
+    <div class="profile-box">
+        <h2>MEMBER PROFILE</h2>
+
+        <div class="row">
+            <label for="name">Name:</label>
+            <input type="text" name="name" value="">
+        </div>
+
+        <div class="row two">
+            <div>
+                <label for="flat_no">Flat No:</label>
+                <input type="text" name="flat_no" value="">
+            </div>
+<br><br>
+            <div>
+                <label for="wing">Wing:</label>
+                <input type="text" name="wing" value="">
+            </div>
+        </div>
+
+        <div class="row">
+            <label for="contact">Contact:</label>
+            <input type="tel" name="phone" value="">
+        </div>
+        
+        <div class="row">
+            <label for="username">Username:</label>
+            <input type="text" name="username" value="">
+        </div>
+        
+        <div class="row">
+            <label for="email">Email:</label>
+            <input type="email" name="email_id" value="">
+        </div>
+			
+        <div class="btn-row">
+            <button type="submit" name="submit" class="update" value="update">Update</button>
+           
+        </div>
+        
+    </div>
+
+</form>
+
+</body>
+</html>

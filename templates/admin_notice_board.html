@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notice Board</title>
+    <link rel="stylesheet" href="/static/css/admin_notice_board.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Admin Navbar</title> <link rel="stylesheet" href="/static/css/admin_navbar.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/admin_dashboard/"> Society<span>Pro</span> </a> </div> <ul class="nav-links"> <li><a href="/admin_dashboard/">Home</a></li> <li><a href="/admin_add_staff/">Add Staff</a></li> <li><a href="/admin_staff_management/">Staff</a></li> <li><a href="/admin_maintenance_bill/">Maintenance</a></li> <li><a href="/admin_notice_board/">Notice</a></li> <li><a href="/admin_event_management/">Events</a></li> <li><a href="/member_payment_history/">Payment</a></li> <li><a href="/admin_view_complaint/">Complaint</a></li> <li><a href="/admin_view_feedback/">Feedback</a></li> <li><a href="/security_register/">Security</a></li> <li><a href="/admin_register/">Register</a></li> <li><a href="/admin_report/">Report</a></li> <li><a href="/logout/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+<body>
+
+<div class="notice-box">
+    <h2>NOTICE BOARD</h2>
+    <br>
+
+    <form id="admin" name="admin_notice_board" action="/action/admin_notice_board/" method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div>
+                <label>Date :</label>
+                <input type="date" name="data">
+            </div>
+
+            <br><br>
+
+            <!-- NOTICE NAME ROW ADDED -->
+            <div>
+                <label>Notice Name :</label>
+                <input type="text" placeholder="Enter notice name" name="notice_name">
+            </div>
+
+            <br><br>
+
+            <div>
+                <label>Notice :</label>
+                <input type="text" placeholder="Enter notice here" name="notice">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" value="admin_notice_board" name="submit" class="add">
+                ADD NOTICE
+            </button>
+
+            <button type="submit" class="edit">
+                EDIT NOTICE
+            </button>
+
+            <button type="submit" class="delete">
+                DELETE NOTICE
+            </button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(25,28,223,0.6), rgba(87,173,236,0.6));
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 920px;
+    background-color: rgba(255, 255, 255, 0.9); /* light & matching */
+    margin: 70px auto;
+    padding: 52px;
+    border-radius: 8px;
+    border: 2px solid #3b82c4; /* matching blue border */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+/* HEADING */
+.container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1f3c88;
+    border-bottom: 2px solid #3b82c4;
+    padding-bottom: 10px;
+}
+
+/* SUBTEXT */
+.container p {
+    text-align: center;
+    color: #1f2933;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* NOTICE LIST */
+.notice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* INDIVIDUAL NOTICE CARD */
+.notice-card {
+    background-color: #f0f9ff; /* light blue shade */
+    border: 1px solid #3b82c4;
+    border-radius: 6px;
+    padding: 12px 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.notice-card h3 {
+    margin: 0;
+    color: #1f3c88;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.notice-card .date {
+    display: block;
+    font-size: 12px;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.notice-card p {
+    font-size: 14px;
+    color: #1f2933;
+    margin: 0;
+}
+
+/* ROWS & LABELS (if used inside notices) */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #1f2933;
+}
+
+/* BUTTONS (if needed) */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #16a34a;
+    color: white;
+    border: 2px solid #15803d;
+    padding: 9px 22px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="reset"] {
+    background-color: #dc2626;
+    color: white;
+    border: 2px solid #b91c1c;
+    padding: 9px 22px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #15803d;
+}
+
+input[type="reset"]:hover {
+    background-color: #b91c1c;
+}

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sticky Modern Navbar */
+.navbar {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Logo */
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #3b82f6;
+}
+
+/* Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+
+    flex-wrap: nowrap;         /* 🔥 Force one line */
+    white-space: nowrap;       /* 🔥 Prevent text break */
+    overflow-x: auto;          /* 🔥 Scroll if small screen */
+    scrollbar-width: none;     /* Firefox */
+}
+
+.nav-links::-webkit-scrollbar {
+    display: none;             /* Chrome */
+}
+
+.nav-links li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+    background-color: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Logout Button */
+.logout {
+    background-color: #ef4444;
+    color: white !important;
+}
+
+.logout:hover {
+    background-color: #dc2626;
+}
+
+/* Prevent content hide behind navbar */
+body {
+    padding-top: 75px;
+}

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Header */
+header {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+}
+
+/* Table Container */
+.table-container {
+    width: 95%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Status Colors */
+.in {
+    color: green;
+    font-weight: bold;
+}
+
+.out {
+    color: red;
+    font-weight: bold;
+}
+
+/* Row Hover */
+table tr:hover {
+    background: #f1f5f9;
+}

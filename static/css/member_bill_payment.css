@@ -1,0 +1,52 @@
+/* PAGE BACKGROUND */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* PAYMENT BOX */
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+.table1 {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #1b5a78;   /* 👈 Add here */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);  /* 👈 Add here */
+}
+
+/* Header */
+.table1 th {
+    background-color: #1f3c88;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ffffff;   /* Border between headings */
+}
+
+/* Table Data */
+.table1 td {
+    padding: 12px;
+    border: 1px solid #cccccc;   /* Border for all cells */
+}
+
+/* Hover Effect */
+.table1 tr:hover {
+    background-color: #f2f6fa;   /* Softer hover */
+}
+.table1 button {
+    padding: 8px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.table1  .ab {
+	color: white;
+}

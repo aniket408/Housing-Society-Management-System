@@ -1,0 +1,109 @@
+/* PAGE BACKGROUND */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(25,28,223,0.6), rgba(87,173,236,0.6));
+}
+
+/* MAIN EVENT BOX */
+.event-box {
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.92);
+    margin: 60px auto;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #3b82c4;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+/* HEADING */
+.event-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f3c88;
+    border-bottom: 2px solid #3b82c4;
+    padding-bottom: 10px;
+}
+
+/* LABELS */
+.event-box label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #1f2933;
+}
+
+/* INPUT & TEXTAREA */
+.event-box input[type="text"],
+.event-box input[type="date"],
+.event-box input[type="time"],
+.event-box textarea {
+    width: 100%;
+    padding: 9px;
+    margin-top: 6px;
+    border-radius: 5px;
+    border: 1.5px solid #94b8e0;
+    outline: none;
+    font-size: 14px;
+}
+
+/* TEXTAREA */
+.event-box textarea {
+    resize: none;
+    height: 90px;
+}
+
+/* FOCUS EFFECT */
+.event-box input:focus,
+.event-box textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* DATE & TIME ROW */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* BUTTON CONTAINER */
+.buttons {
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* ADD EVENT BUTTON */
+button.submit {
+    background-color: #16a34a;
+    color: white;
+    border: 2px solid #15803d;
+    padding: 10px 24px;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* RESET BUTTON */
+button.reset {
+    background-color: #dc2626;
+    color: white;
+    border: 2px solid #b91c1c;
+    padding: 10px 24px;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECTS */
+button.submit:hover {
+    background-color: #15803d;
+}
+
+button.reset:hover {
+    background-color: #b91c1c;
+}

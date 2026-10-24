@@ -1,0 +1,89 @@
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("images/pexels-alejandra-montenegro-1146787-18184146.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* LOGIN BOX (was .container) */
+.login-box {
+    width: 420px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    margin: 80px auto;
+    padding: 22px;
+    border-radius: 8px;
+    border: 2px solid #3b82c4;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+/* HEADING */
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 2px solid #3b82c4;
+    padding-bottom: 10px;
+}
+
+/* LABELS */
+.login-box label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* INPUT FIELDS */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 1.5px solid #94b8e0;
+    outline: none;
+}
+
+/* INPUT FOCUS */
+.login-box input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.5);
+}
+
+/* LOGIN BUTTON */
+.login-box button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #16a34a;
+    color: white;
+    border: 2px solid #15803d;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* BUTTON HOVER */
+.login-box button:hover {
+    background-color: #15803d;
+}
+
+/* FORGOT PASSWORD LINK */
+.login-box a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}

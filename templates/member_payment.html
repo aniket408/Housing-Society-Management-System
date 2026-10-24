@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Make Payment - SocietyPro</title>
+    <link rel="stylesheet" href="/static/css/member_billpayment.css">
+</head>
+
+<body>
+
+<!-- Navbar Include -->
+ <!DOCTYPE html> <html> <head> <title>Member Navbar</title> <link rel="stylesheet" href="/static/css/member_navbar.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/index/">Society<span>Pro</span></a> </div> <ul class="nav-links"> <li><a href="/member_dashboard/">Home</a></li> <li><a href="/member_profile/">Member Profile Edit</a></li> <li><a href="/member_bill_payment/">Pending Bills</a></li> <li><a href="/member_payment/">Payment</a></li> <li><a href="/member_complaint_form/">Complaint</a></li> <li><a href="/member_view_notice/">Society Notices</a></li> <li><a href="/member_view_staff/">Staff</a></li> <li><a href="/member_feedback/">Member Feedback</a></li> <div class="profile"> <a href="/member_profile1/"><i class="fas fa-user"></i></a> </div> <li><a href="/index/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+<div class="payment-container">
+
+    <h2>Society Maintenance Payment</h2>
+
+    <div class="bill-details">
+        <p><strong>Flat No: </strong></p>
+        <p><strong>Wing: </strong></p>
+        <p><strong>Month: </strong></p>
+        <p><strong>Year: </strong></p>
+        <p class="amount"><strong>Total Amount: </strong> ₹</p>
+    </div>
+
+    <form action="/action/member_payment/" method="post">
+        {% csrf_token %}
+
+        <h3>Payment Method</h3>
+
+        <div class="payment-method">
+            <label>
+                <input type="radio" name="method" value="card" checked>
+                Credit / Debit Card
+            </label>
+
+            <label>
+                <input type="radio" name="method" value="upi">
+                UPI
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>Card Holder Name / UPI Account Name</label>
+            <input type="text" name="accountName"
+                   placeholder="Enter Name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Card Number / UPI ID</label>
+            <input type="text" name="accountNumber"
+                   placeholder="1234 5678 9012 3456" required>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Expiry Date</label>
+                <input type="text" name="expiry"
+                       placeholder="MM/YY">
+            </div>
+
+            <div class="form-group">
+                <label>CVV</label>
+                <input type="password" name="cvv"
+                       placeholder="123">
+            </div>
+        </div>
+
+        <button type="submit" name="submit" value="paynow" class="pay-btn">
+            Pay ₹ 
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

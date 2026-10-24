@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports</title>
+    <link rel="stylesheet" href="/static/css/admin_report.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Admin Navbar</title> <link rel="stylesheet" href="/static/css/admin_navbar.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/admin_dashboard/"> Society<span>Pro</span> </a> </div> <ul class="nav-links"> <li><a href="/admin_dashboard/">Home</a></li> <li><a href="/admin_add_staff/">Add Staff</a></li> <li><a href="/admin_staff_management/">Staff</a></li> <li><a href="/admin_maintenance_bill/">Maintenance</a></li> <li><a href="/admin_notice_board/">Notice</a></li> <li><a href="/admin_event_management/">Events</a></li> <li><a href="/member_payment_history/">Payment</a></li> <li><a href="/admin_view_complaint/">Complaint</a></li> <li><a href="/admin_view_feedback/">Feedback</a></li> <li><a href="/security_register/">Security</a></li> <li><a href="/admin_register/">Register</a></li> <li><a href="/admin_report/">Report</a></li> <li><a href="/logout/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+<body>
+<form action="/view_report/" method="post">
+        {% csrf_token %}
+
+    <h2>Normal Report</h2>
+
+     <input type="submit" name="submit" value="Entry List">
+ 
+     <input type="submit" name="submit" value="staff list">
+     
+      <input type="submit" name="submit" value="notice list">
+      
+       <input type="submit" name="submit" value="feedback list">
+       
+        <input type="submit" name="submit" value="Event list">
+        
+         <input type="submit" name="submit" value="complaint list">
+         
+          <input type="submit" name="submit" value="Bill list">
+          
+            <input type="submit" name="submit" value="Entery exit list">
+   
+ <h2>Id Wise Report</h2>
+ <input type="text" name="id" placeholder="Enter ID Here"><br>
+  <input type="submit" name="submit" value="id wise bill list">
+ 
+     <input type="submit" name="submit" value="id wise member list">   
+     
+    
+      <h2>Date Wise Report</h2>
+       <input type="text" name="date" placeholder="Enter Date Here"><br>
+       <input type="submit" name="submit" value="date wise notice report">
+ <input type="submit" name="submit" value="date wise event list"> 
+      
+     </form>
+</body>
+</html>
+    

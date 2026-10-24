@@ -1,0 +1,55 @@
+/* BACKGROUND */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        rgba(25, 28, 223, 0.6),
+        rgba(87, 173, 236, 0.6)
+    );
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid #3b82c4;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+/* HEADING */
+h2 {
+    text-align: center;
+    color: #1f3c88;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3b82c4;
+    padding-bottom: 10px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* TABLE HEADER */
+th {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px;
+    border: 1px solid #1e40af;
+}
+
+/* TABLE DATA */
+td {
+    padding: 10px;
+    border: 1px solid #94b8e0;
+    text-align: center;
+}
+
+/* ROW HOVER */
+tr:hover {
+    background-color: #e0ecff;
+}

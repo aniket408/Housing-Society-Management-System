@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security Login</title>
+     <link rel="stylesheet" href="/static/css/security_login.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Navbar</title> <link rel="stylesheet" href="/static/css/member_navbar.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/index/">Society<span>Pro</span></a> </div> <ul class="nav-links"> <li><a href="/index/">Home</a></li> <li><a href="/index/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+
+
+<body>
+
+<div class="login-box">
+    <h2>SECURITY LOGIN</h2>
+
+    <form id="member" name="security_login" action="/action/security_login/" method="post">
+        {% csrf_token %}
+        <label>Security ID</label>
+        <input type="text" placeholder="Enter Security ID" required name="securityId">
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" required name="password">
+
+        <button type="submit" name="submit" value="Login">Login</button>
+
+        
+           
+    
+        
+    </form>
+</div>
+
+</body>
+</html>
+    

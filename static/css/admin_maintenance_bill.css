@@ -1,0 +1,101 @@
+/* BODY BACKGROUND */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(25,28,223,0.6), rgba(87,173,236,0.6));
+}
+
+/* MAIN BILL BOX */
+.bill-box {
+    width: 420px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 70px auto;
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid #3b82c4;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+/* HEADING */
+.bill-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f3c88;
+    border-bottom: 2px solid #3b82c4;
+    padding-bottom: 10px;
+}
+
+/* LABELS */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #1f2933;
+}
+
+/* INPUT FIELDS */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1.5px solid #94b8e0;
+    outline: none;
+}
+
+/* INPUT FOCUS */
+input[type="text"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.5);
+}
+
+/* ROW STYLING */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.row div {
+    width: 48%;
+}
+
+/* BUTTON ROW */
+.btn-row {
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* GENERATE BUTTON */
+button.generate {
+    background-color: #16a34a;
+    color: white;
+    border: 2px solid #15803d;
+    padding: 9px 22px;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* RESET BUTTON */
+button.reset {
+    background-color: #dc2626;
+    color: white;
+    border: 2px solid #b91c1c;
+    padding: 9px 22px;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* HOVER EFFECTS */
+button.generate:hover {
+    background-color: #15803d;
+}
+
+button.reset:hover {
+    background-color: #b91c1c;
+}

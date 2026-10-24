@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security Registration</title>
+    <link rel="stylesheet" href="/static/css/security_register.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Navbar</title> <link rel="stylesheet" href="/static/css/member_navbar.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/index/">Society<span>Pro</span></a> </div> <ul class="nav-links"> <li><a href="/index/">Home</a></li> <li><a href="/index/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+<body>
+
+<div class="register-box">
+    <h2>SECURITY REGISTRATION FORM</h2>
+
+    <form id="member" name="security_register" action="/action/security_register/" method="post">
+        {% csrf_token %}
+
+        <label>Security Name</label>
+        <input type="text" placeholder="security name" required name="securityname">
+
+        <label>Security ID</label>
+        <input type="text" placeholder="security_id" required name="securityid">
+
+        <label>Shift Time</label>
+        <input type="text" placeholder="Day / Night" required name="shift">
+
+        <label>Contact No</label>
+        <input type="text" placeholder="security contact no" required name="contact">
+
+        <label>Email ID</label>
+        <input type="email" placeholder="security email"  required name="email">
+
+        <label>Username</label>
+        <input type="text" placeholder="username" required name="username">
+
+        <label>Password</label>
+        <input type="password" placeholder="password" required name="password">
+
+         <label>Confirm Password</label>
+        <input type="password" placeholder="confirm password" required name="cpassword">
+
+        <div class="buttons">
+            <button type="submit"value="security_register" name="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
+    

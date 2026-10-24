@@ -1,0 +1,86 @@
+/* PAGE BACKGROUND */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        rgba(25, 28, 223, 0.6),
+        rgba(87, 173, 236, 0.6)
+    );
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 420px;
+    background-color: rgba(255, 255, 255, 0.92);
+    margin: 60px auto;
+    padding: 22px;
+    border-radius: 8px;
+    border: 2px solid #3b82c4;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* HEADING */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f3c88;
+    border-bottom: 2px solid #3b82c4;
+    padding-bottom: 10px;
+}
+
+/* FORM GROUP */
+.form-group {
+    margin-bottom: 14px;
+}
+
+/* LABELS */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #1f2933;
+}
+
+/* INPUTS, SELECT, TEXTAREA */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1.5px solid #94b8e0;
+    outline: none;
+    font-size: 14px;
+}
+
+/* TEXTAREA */
+textarea {
+    resize: none;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.5);
+}
+
+/* SUBMIT BUTTON */
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #16a34a;
+    color: white;
+    border: 2px solid #15803d;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background-color: #15803d;
+}

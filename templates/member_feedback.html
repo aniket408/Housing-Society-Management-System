@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Feedback</title>
+    <link rel="stylesheet" href="/static/css/member_feedback.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Member Navbar</title> <link rel="stylesheet" href="/static/css/member_navbar.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/index/">Society<span>Pro</span></a> </div> <ul class="nav-links"> <li><a href="/member_dashboard/">Home</a></li> <li><a href="/member_profile/">Member Profile Edit</a></li> <li><a href="/member_bill_payment/">Pending Bills</a></li> <li><a href="/member_payment/">Payment</a></li> <li><a href="/member_complaint_form/">Complaint</a></li> <li><a href="/member_view_notice/">Society Notices</a></li> <li><a href="/member_view_staff/">Staff</a></li> <li><a href="/member_feedback/">Member Feedback</a></li> <div class="profile"> <a href="/member_profile1/"><i class="fas fa-user"></i></a> </div> <li><a href="/index/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+<body>
+
+<div class="container">
+    <h2>Member Feedback</h2>
+
+    <form id="member" name="member_feedback" action="/action/member_feedback/" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Member Name</label>
+            <input type="text" name="member_name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Flat Number</label>
+            <input type="text" name="flat_no" placeholder="e.g. A-101" required>
+        </div>
+
+        <div class="form-group">
+            <label>Feedback Type</label>
+            <select name="feedback_type" required>
+                <option value="Select">-- Select --</option>
+                <option value="Maintenance">Maintenance</option>
+                <option value="Security">Security</option>
+                <option value="Cleanliness">Cleanliness</option>
+                <option value="Parking">Parking</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Your Feedback</label>
+            <textarea name="feedback" rows="5" placeholder="Write your feedback..." required></textarea>
+        </div>
+
+        <button type="submit" value="member_feedback" name="submit">Submit Feedback</button>
+    </form>
+</div>
+
+</body>
+</html>
+    

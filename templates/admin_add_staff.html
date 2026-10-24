@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Staff | Admin</title>
+     <link rel="stylesheet" href="/static/css/admin_add_staff.css">
+    
+</head>
+ <!DOCTYPE html> <html> <head> <title>Admin Navbar</title> <link rel="stylesheet" href="/static/css/admin_navbar.css"> </head> <body> <nav class="navbar"> <div class="logo"> <a href="/admin_dashboard/"> Society<span>Pro</span> </a> </div> <ul class="nav-links"> <li><a href="/admin_dashboard/">Home</a></li> <li><a href="/admin_add_staff/">Add Staff</a></li> <li><a href="/admin_staff_management/">Staff</a></li> <li><a href="/admin_maintenance_bill/">Maintenance</a></li> <li><a href="/admin_notice_board/">Notice</a></li> <li><a href="/admin_event_management/">Events</a></li> <li><a href="/member_payment_history/">Payment</a></li> <li><a href="/admin_view_complaint/">Complaint</a></li> <li><a href="/admin_view_feedback/">Feedback</a></li> <li><a href="/security_register/">Security</a></li> <li><a href="/admin_register/">Register</a></li> <li><a href="/admin_report/">Report</a></li> <li><a href="/logout/" class="logout">Logout</a></li> </ul> </nav> </body> </html>
+
+<body>
+
+<div class="container">
+
+    <h2>Add New Staff</h2>
+
+    <form id="admin" name="admin_add_staff" action="/action/admin_add_staff/" method="post">
+        {% csrf_token %}
+
+        <div class="row">
+            <div class="field">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter staff name" required name="name">
+            </div>
+
+            <div class="field">
+                <label>Role</label>
+                <select required name="role">
+                    <option value="Select Role">Select Role</option>
+                   
+                    <option value="Cleaner">Cleaner</option>
+                    <option value="Gardener">Gardener</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="Security">Security</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field">
+                <label>Shift</label>
+                <select required name="shift">
+                    <option value="Select Shift">Select Shift</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Day">Day</option>
+                    <option value="Night">Night</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter phone number" required name="number">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field">
+                <label>Address</label>
+                 <input type="text" placeholder="Enter staff address" required name="address">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field">
+                <label>Status</label>
+                <select name="status">
+                    <option value="active" >Active</option>
+                    <option value="inactive">Inactive</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="save" name="submit" value="admin_add_staff">Save</button>
+            <button type="reset" class="cancel">Cancel</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
+    
